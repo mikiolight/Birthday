@@ -17,4 +17,8 @@ class Friend {
 		self.name = name
 		self.birthday = birthday
 	}
+
+	var isBrithdayToday: Bool {
+		Calendar.current.isDateInToday(birthday)
+	}
 }
